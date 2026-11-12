@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#142c49" />
+  <meta name="description" content="Atelierul Lunei – decorațiuni și cadouri create cu dragoste. Din familia noastră, în casa voastră." />
+  <title>Atelierul Lunei | Creat cu dragoste</title>
+  <style>
+    :root { --bg:#f7f0e4; --paper:#fffaf1; --ink:#263b4b; --muted:#655f58; --accent:#a67a3b; --line:#e7d9c6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+    a { color:inherit; }
+    .container { width:min(1100px,calc(100% - 40px)); margin-inline:auto; }
+    header { background:#142c49; color:#f8edd7; border-bottom:1px solid #3c5872; }
+    .nav { min-height:118px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { display:inline-flex; align-items:center; gap:12px; text-decoration:none; font-weight:bold; font-size:1.35rem; white-space:nowrap; }
+    .brand img { display:block; width:96px; height:96px; object-fit:contain; }
+    nav { display:flex; gap:25px; flex-wrap:wrap; font-family:Arial,sans-serif; font-size:.92rem; }
+    nav a { text-decoration:none; }
+    nav a:hover, nav a:focus-visible { color:#e9c48a; text-decoration:underline; }
+    .hero { padding:96px 0 104px; text-align:center; background:transparent; }
+    .eyebrow { font-family:Arial,sans-serif; text-transform:uppercase; letter-spacing:.22em; color:var(--accent); font-size:.76rem; font-weight:bold; }
+    h1 { font-size:clamp(2.4rem,6vw,4.6rem); line-height:1.13; margin:22px auto; max-width:850px; font-weight:normal; }
+    .hero p { max-width:650px; margin:0 auto 26px; font-size:1.16rem; color:var(--muted); }
+    .slogan { font-style:italic; color:var(--accent); font-size:1.24rem; }
+    .coming { display:inline-block; margin-top:32px; padding:10px 22px; border:1px solid var(--accent); background:#142c49; color:#f8edd7; border-radius:100px; font:600 .8rem Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+    section.info { background:var(--paper); border-top:1px solid var(--line); padding:68px 0; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:start; }
+    h2 { font-weight:normal; font-size:2rem; margin:0 0 18px; }
+    .info p { margin:0; color:var(--muted); }
+    .products-placeholder { padding:64px 0; text-align:center; }
+    .products-placeholder p { max-width:600px; margin:0 auto; color:var(--muted); }
+    .divider { width:68px; height:1px; background:var(--accent); margin:0 auto 24px; }
+    footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); font: .86rem Arial,sans-serif; }
+    .footer-inner { display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; }
+    @media(max-width:700px) { .nav { flex-direction:column; padding:16px 0 20px; gap:14px; } .brand img { width:84px; height:84px; } nav { justify-content:center; gap:18px; } .hero { padding:70px 0 78px; } .info-grid { grid-template-columns:1fr; gap:38px; } section.info { padding:48px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#acasa" aria-label="Atelierul Lunei – Acasă">
+        <!-- Logo Atelierul Lunei -->
+        <img src="assets/logo-atelierul-lunei.png" alt="Logo Atelierul Lunei" />
+      </a>
+      <nav aria-label="Navigare principală">
+        <a href="#acasa">Acasă</a>
+        <a href="#produse">Produse</a>
+        <a href="#despre">Despre noi</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="acasa">
+      <div class="eyebrow">Un mic atelier de familie</div>
+      <h1>Lucruri mici, create cu dragoste.</h1>
+      <p>Pregătim decorațiuni, cadouri personalizate și obiecte speciale, realizate cu grijă pentru a aduce bucurie în fiecare casă.</p>
+      <div class="slogan">Din familia noastră, în casa voastră.</div>
+      <div><span class="coming">În curând</span></div>
+    </section>
+
+    <section class="info" id="despre">
+      <div class="container info-grid">
+        <div>
+          <div class="eyebrow">Povestea noastră</div>
+          <h2>Bine ai venit în atelier!</h2>
+          <p>Atelierul Lunei este un proiect de familie, născut din dorința de a transforma ideile în obiecte frumoase, personale și pline de căldură. Fiecare creație va fi pregătită cu atenție la detalii.</p>
+        </div>
+        <div>
+          <div class="eyebrow">Ce pregătim</div>
+          <h2>Cadouri cu personalitate</h2>
+          <p>Lucrăm la primele colecții de decorațiuni și obiecte realizate manual sau prin imprimare 3D. În curând vei putea descoperi fotografii reale, detalii și opțiuni de personalizare.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-placeholder container" id="produse">
+      <div class="divider"></div>
+      <div class="eyebrow">Colecțiile noastre</div>
+      <h2>Primele creații sunt în pregătire</h2>
+      <p>Nu afișăm produse înainte să fie gata. Aici vom adăuga fotografiile și, ulterior, un carusel cu produsele Atelierului Lunei.</p>
+    </section>
+
+    <section class="info" id="contact">
+      <div class="container" style="text-align:center">
+        <div class="eyebrow">Ținem legătura</div>
+        <h2>Ne revedem curând!</h2>
+        <p>Pregătim lansarea atelierului. Datele de contact și posibilitatea de a plasa comenzi vor apărea aici când vor fi disponibile.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Atelierul Lunei</span>
+      <span>Din familia noastră, în casa voastră.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
